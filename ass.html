@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calculator{
+          width:500px;  
+           height: 500px;
+           background-color: rgb(214, 204, 204);
+        }
+        text{
+            background-color: bisque;
+            height: 100px;
+        }
+     .buttons{
+        width:200px;
+            height: 200px;
+            padding:100px;
+            border:2px solid black;
+     }
+ 
+        
+           
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="display">
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="operator1" onclick="appendOperation('/')">/</button>
+            <button class="operator2" onclick="appendOperation('*')">*</button>
+            <button class="operator3" onclick="appendOperation('-')">-</button>
+            <button class="operator4" onclick="appendOperation('+')">+</button>
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button" onclick="appendNumber('9')">0</button>
+            
+</div>
+<button onClick="handleClick()">Click me</button>
+    <script>
+        function handleClick(){
+console.log("button is clicked");
+        }
+    </script>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function turnOnOff() {
+            let image = document.getElementById('Image');
+            if (image.src.match("ONbulb"))
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+            else
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+        }
+    </script>
+
+    <img id="Image" onclick="turnOnOff()" src=
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+
+    <p>
+        Click on the bulb to turn it ON and OFF
+    </p>
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function turnOnOff() {
+            let image = document.getElementById('Image');
+            if (image.src.match("ONbulb"))
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+            else
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+        }
+    </script>
+
+    <img id="Image" onclick="turnOnOff()" src=
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+
+    <p>
+        Click on the bulb to turn it ON and OFF
+    </p>
+</body>
+
+</html>

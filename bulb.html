@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to bulb world</h1>
+    <button onclick="turnon()">ON</button>
+    <button onclick="turnoff()">Off</button>
+    <button id="toggle_btn" onclick="toggleBulb()">ON_bulb</button>
+    <div>
+        <img id="bulb" src="offbulb.jpg" width="100px" height="300px">
+         
+
+    </div>
+    <script>
+        const turnon=()=>{
+            let img_obj=document.getElementById("bulb")
+            img_obj.setAttribute("src","onbulb.jpg")
+        }
+        const turnoff=()=>{
+            let img_obj=document.getElementById("bulb")
+            img_obj.setAttribute("src","onbulb.jpg")
+        }
+        const  toggleBulb=()=>{
+            let img_obj=document.getElementById("bulb");
+            let srcValue=img_obj.getAttribute("src");
+            let btn_obj=document.getElementById("toggle_btn");
+            let btn_text=btn_obj.innerHTML;
+            if(srcValue=="offbulb.jpg")
+        {
+            turnOn();
+            btn_obj.innerHTML="OFF_bulb";
+        
+        }
+        else{
+turnoff();
+btn_obj.innerHTML="ON_bulb";
+        }
+        }
+    </script>
+</body>
+</html>
